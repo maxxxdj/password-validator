@@ -2,11 +2,11 @@ public class Program {
     public static void main(String[] args) {
 
 
-        /** Testing when password is only letters and less than 10 characters. */
+        /** Testing when password has only letters and is less than 10 characters. */
         String strPass = "abv";
         System.out.println(validatePassword(strPass));
 
-        /** Testing when password is only digits. */
+        /** Testing when password has only digits. */
         int intPass = 12345;
         System.out.println(validatePassword(intPass));
 
