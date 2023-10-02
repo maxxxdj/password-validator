@@ -22,7 +22,7 @@ public class Program {
         return switch (password) {
             case null -> "Password cannot be empty!";
             case Number i -> "Password cannot consist only of numbers!";
-            case String s when s.length() > 10 && s.matches(".*[a-z]|.*[A-Z]|.*[0-9]") -> "Password is valid!";
+            case String s when s.length() > 10 && s.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$") -> "Password is valid!";
             default -> "Invalid password! \n" + "Password must include an uppercase, lowercase, and a number.";
         };
     }
